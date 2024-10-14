@@ -6,20 +6,20 @@ import {z} from "zod";
 import {Button} from "@/components/ui/button";
 import {
   Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
+  //FormControl,
+  // FormDescription,
+  // FormField,
+  // FormItem,
+  // FormLabel,
+  // FormMessage,
 } from "@/components/ui/form";
 import {Input} from "@/components/ui/input";
 
 import {
-  aspectRatioOptions,
-  creditFee,
+  // aspectRatioOptions,
+  // creditFee,
   defaultValues,
-  transformationTypes,
+  // transformationTypes,
 } from "@/constants";
 
 import {CustomField} from "./CustomField";
@@ -35,21 +35,21 @@ export const formSchema = z.object({
 const TransformationForm = ({
   action,
   data = null,
-  userId,
-  type,
-  creditBalance,
-  config = null,
-}: TransformationFormProps) => {
-  const initialValues =
-    data && action === "Update"
-      ? {
-          title: data?.title,
-          aspectRatio: data?.aspectRatio,
-          color: data?.color,
-          prompt: data?.prompt,
-          publicId: data?.publicId,
-        }
-      : defaultValues;
+}: // userId,
+// type,
+// creditBalance,
+// config = null,
+TransformationFormProps) => {
+  //  const initialValues =
+  data && action === "Update"
+    ? {
+        title: data?.title,
+        aspectRatio: data?.aspectRatio,
+        color: data?.color,
+        prompt: data?.prompt,
+        publicId: data?.publicId,
+      }
+    : defaultValues;
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
