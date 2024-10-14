@@ -56,6 +56,8 @@ export async function POST(req: Request) {
   const {id} = evt.data;
   const eventType = evt.type;
 
+  console.log("User info is getting from clerk");
+
   // CREATE
   if (eventType === "user.created") {
     const {id, email_addresses, image_url, first_name, last_name, username} =
@@ -69,6 +71,8 @@ export async function POST(req: Request) {
       lastName: last_name,
       photo: image_url,
     };
+
+    console.log("User is getting added to Mongo DB");
 
     const newUser = await createUser(user);
 

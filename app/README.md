@@ -17,3 +17,7 @@ https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templa
 
 - Mongoose
   - want to check why the mongo connection is cached if I use docker container
+
+## Forms
+
+https://ui.shadcn.com/docs/components/form
