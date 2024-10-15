@@ -21,3 +21,7 @@ https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templa
 ## Forms
 
 https://ui.shadcn.com/docs/components/form
+
+## Issues to fix
+
+After signin, redirect to localhost:3000
