@@ -22,6 +22,10 @@ https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templa
 
 https://ui.shadcn.com/docs/components/form
 
+## Cloudinary
+
+npm i next-cloudinary
+
 ## Issues to fix
 
 After signin, redirect to localhost:3000
