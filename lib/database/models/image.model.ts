@@ -2,6 +2,7 @@ import {Schema} from "mongoose";
 import mongoose from "mongoose";
 
 export interface IImage extends Document {
+  _id: string;
   title: string;
   transformationType: string;
   publicId: string;
